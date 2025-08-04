@@ -71,7 +71,7 @@
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #ff8400;
     }
 
     #result {
@@ -123,13 +123,13 @@
   <script>
     function calculateAverage() {
       const leadsA = parseInt(document.getElementById('leadsA').value) || 0;
-      const timeA = parseFloat(document.getElementById('quoteA').value) || 0;
+      const quoteA = parseFloat(document.getElementById('quoteA').value) || 0;
 
       const leadsB = parseInt(document.getElementById('leadsB').value) || 0;
-      const timeB = parseFloat(document.getElementById('quoteB').value) || 0;
+      const quoteB = parseFloat(document.getElementById('quoteB').value) || 0;
 
       const leadsC = parseInt(document.getElementById('leadsC').value) || 0;
-      const timeC = parseFloat(document.getElementById('quoteC').value) || 0;
+      const quoteC = parseFloat(document.getElementById('quoteC').value) || 0;
 
       const totalLeads = leadsA + leadsB + leadsC;
       const totalTime = (leadsA * quoteA) + (leadsB * quoteB) + (leadsC * quoteC);
